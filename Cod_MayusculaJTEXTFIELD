@@ -1,0 +1,10 @@
+//Creamos un metodo dentro de una accion de parametro keyevent
+
+private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {                                     
+        char c = evt.getKeyChar();
+        if(Character.isLowerCase(c)){
+            String cad = (""+c).toUpperCase();
+            c=cad.charAt(0);
+            evt.setKeyChar(c);
+        }
+    } 
